@@ -2,7 +2,7 @@
   "usuario": [
     {
       "id": 1,
-      "nome": "Hamb�rguer",
+      "nome": "Hambürguer",
       "email": "joaozinho@banco.com",
       "endereco": {
         "cep": "11440-000",
@@ -16,7 +16,7 @@
     },
     {
       "id": 2,
-      "nome": "X-B�rguer",
+      "nome": "X-Bürguer",
       "email": "joaozinho@banco.com",
       "endereco": {
         "cep": "11440-000",
@@ -30,7 +30,7 @@
     },
     {
       "id": 3,
-      "nome": "X-Bacon",
+      "nome": "X-Bacon = salada",
       "email": "joaozinho@banco.com",
       "endereco": {
         "cep": "11440-000",
@@ -44,7 +44,7 @@
     },
     {
       "id": 4,
-      "nome": "X-Tudo",
+      "nome": "X-Tudo + Doguinho",
       "email": "joaozinho@banco.com",
       "endereco": {
         "cep": "11440-000",
@@ -113,7 +113,7 @@
       "id": 13
     },
     {
-      "nome": "João",
+      "nome": "João lucas souza carne seca",
       "email": "j.lucassousa76@gmail.com",
       "endereco": {
         "cep": "06618-000",
@@ -153,6 +153,20 @@
         "cidade": "Santos"
       },
       "id": 16
+    },
+    {
+      "nome": "João Lucas Souza da Fonseca",
+      "email": "j.lucassousa76@gmail.com",
+      "endereco": {
+        "cep": "06618-000",
+        "rua": "Avenida Antônio Bardella",
+        "complemento": "",
+        "estado": "SP",
+        "numero": "2",
+        "bairro": "Jardim São Luiz",
+        "cidade": "Jandira"
+      },
+      "id": 17
     }
   ]
 }

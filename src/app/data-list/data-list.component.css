@@ -7,3 +7,10 @@
      padding-bottom: 10px;
 
  }
+
+ .edit:focus{
+     
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+ }

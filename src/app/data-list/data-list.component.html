@@ -22,7 +22,18 @@
     <p><strong>nº residencia:</strong> {{model.endereco.numero}}</p>
     <p><strong>Cidade: </strong>{{model.endereco.cidade}}</p>
 
-   
+
+    <button class="edit" mat-icon-button color="primary" routerLink="/editar/{{model.id}}" >
+      <mat-icon class="edit"> border_color</mat-icon>
+    </button>
+
+    <button class="edit"  mat-icon-button color="primary" >
+      <mat-icon>restore_from_trash</mat-icon>
+    </button>
+
+    
+
+    
   </mat-expansion-panel>
 
   

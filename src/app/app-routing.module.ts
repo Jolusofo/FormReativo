@@ -11,6 +11,8 @@ const routes: Routes = [
 
 {path: 'lista', loadChildren: () => import('./data-list/datalist/datalist.module').then((m) => m.DatalistModule) },
 
+{path: 'editar/:id', loadChildren: () => import('./data-edit/data-edit.module').then((m) => m.DataEditModule) },
+
 
 
 

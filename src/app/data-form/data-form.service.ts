@@ -20,14 +20,15 @@ export class DataFormService {
         })
     }
 
- /*  showMessage(msg: string): void {
+  showMessage(msg: string): void {
     this.snackBar.open(msg, 'X', {
-      duration: 3000,
+      duration: 4000,
       horizontalPosition: "right",
-      verticalPosition: "top"
+      verticalPosition: "top",
+      
     })
 
-  } */
+  }
 create(usuario): Observable<Usuario> {
   
   return this.http.post<Usuario>(this.baseUrl + '/usuario',
@@ -37,4 +38,17 @@ create(usuario): Observable<Usuario> {
 read(): Observable<Usuario[]> {
   return this.http.get<Usuario[]>(this.baseUrl + '/usuario')
 }
+
+
+update(id, usuario): Observable<Usuario> {
+  return this.http.put<Usuario>(this.baseUrl + '/usuario/' + id,
+      JSON.stringify(usuario), this.httpOptions)
+      
+}
+
+get(id):Observable<Usuario>{
+  return this.http.get<Usuario>(this.baseUrl + '/usuario/' + id)
+    
+}
+
 }

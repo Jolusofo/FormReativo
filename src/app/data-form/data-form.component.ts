@@ -51,14 +51,14 @@ if(this.formulario.valid){
   this.formService.create(this.formulario.value)
   .subscribe(dados => {
   //  console.log(dados);
-    alert('Dados enviados com sucesso!');
+  this.formService.showMessage('Cadastro criado com sucesso!');
     this.resetar();
 
     }, 
     )
   } else {
    //   console.log('formulario invalido');
-      alert('erro');
+   this.formService.showMessage('Erro ao enviar formulario, verifique os campos preenchidos!');
          this.verificaValidacoesForm(this.formulario);
     } 
     

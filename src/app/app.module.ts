@@ -21,7 +21,7 @@ import {DataFormService} from './data-form/data-form.service';
 
 import {DatalistRoutingModule} from './data-list/datalist/datalist-routing.module';
 
-
+import {DataEditRoutingModule} from './data-edit/data-edit-routing.module';
 
 
 
@@ -44,7 +44,7 @@ import {DatalistRoutingModule} from './data-list/datalist/datalist-routing.modul
     MatToolbarModule,
     MatButtonModule,
     MatSnackBarModule,
-  
+    DataEditRoutingModule,
     BrowserAnimationsModule,
     CommonModule,
     
