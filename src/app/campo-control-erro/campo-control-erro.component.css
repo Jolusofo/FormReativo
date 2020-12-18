@@ -1,0 +1,10 @@
+
+
+.alerta{
+    display: grid;
+    grid-template-columns: auto;
+    
+    align-self: flex-start;
+     padding: 5px;
+   
+}

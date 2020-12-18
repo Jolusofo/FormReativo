@@ -1,0 +1,158 @@
+<mat-card>
+
+  <mat-card-title>Novo Usuario</mat-card-title>
+  <form class="form-horizontal" [formGroup]='formulario'>
+
+    <div class="form-group" [ngClass]="aplicaCssErro('nome')">
+
+      <div class="col-sm-12">
+        <label for="nome">Nome completo</label>
+      </div>
+
+
+      <div class="col-sm-12">
+
+
+        <input type="text" matInput class="form-control" formControlName="nome" id="nome" aria-describedby="namelHelp">
+
+      </div>
+      <app-campo-control-erro [mostrarErro]="verificaValidTouched('nome')" msgErro="nome invalido.">
+
+      </app-campo-control-erro>
+
+    </div>
+
+
+
+    <div class="form-group" [ngClass]="aplicaCssErro('email')">
+      <div class="col-sm-12">
+        <label for="email">E-mail</label>
+      </div>
+
+      <div class="col-sm-12">
+        <input type="email" class="form-control" formControlName="email" id="email" aria-describedby="emailHelp">
+
+      </div>
+      <app-campo-control-erro [mostrarErro]="verificaValidTouched('email')" msgErro="email invalido.">
+
+      </app-campo-control-erro>
+
+    </div>
+
+
+
+    <div formGroupName="endereco">
+
+      <div class="form-group form-row center">
+        <div class="col-md-3">
+
+          <label for="cep" class="control-label">CEP</label>
+          <input type="text" class="form-control" id="cep" formControlName="cep" (blur)="consultaCEP()" name="cep">
+          <app-campo-control-erro [mostrarErro]="verificaValidTouched('endereco.cep')" msgErro="Cep invalido.">
+
+          </app-campo-control-erro>
+
+
+        </div>
+
+        <div class="col-md-3">
+
+          <label for="numero" class="control-label">Número</label>
+          <input type="text" class="form-control" id="numero" formControlName="numero" name="numero">
+          <app-campo-control-erro [mostrarErro]="verificaValidTouched('endereco.numero')" msgErro="numero invalido.">
+
+          </app-campo-control-erro>
+        </div>
+
+
+        <div class="col-md-6">
+
+          <label for="complemento" class="control-label">Complemento</label>
+          <input type="text" class="form-control" id="complemento" formControlName="complemento" name="complemento">
+
+
+        </div>
+
+
+
+      </div>
+
+
+      <div class="form-group">
+        <div class="col-sm-12">
+          <label for="rua">Rua</label>
+        </div>
+
+        <div class="col-sm-12">
+          <input type="text" class="form-control" name="rua" formControlName="rua" id="rua" aria-describedby="ruaHelp">
+          <app-campo-control-erro [mostrarErro]="verificaValidTouched('endereco.rua')" msgErro="rua invalido.">
+
+          </app-campo-control-erro>
+
+        </div>
+
+      </div>
+
+      <div class="form-group form-row center">
+
+
+
+
+        <div class="col-sm-5">
+          <label for="bairro">Bairro</label>
+          <input type="text" class="form-control" name="bairro" formControlName="bairro" id="bairro"
+            aria-describedby="bairroHelp">
+
+          <app-campo-control-erro [mostrarErro]="verificaValidTouched('endereco.bairro')" msgErro="bairro invalido.">
+
+          </app-campo-control-erro>
+
+        </div>
+
+
+
+
+
+        <div class="col-sm-4">
+          <label for="cidade">Cidade</label>
+          <input type="text" class="form-control" name="cidade" formControlName="cidade" id="cidade"
+            aria-describedby="cidadeHelp">
+
+          <app-campo-control-erro [mostrarErro]="verificaValidTouched('endereco.cidade')" msgErro="cidade invalido.">
+
+          </app-campo-control-erro>
+
+        </div>
+
+
+        <div class="col-sm-3">
+          <label for="estado">Estado</label>
+          <input type="text" class="form-control" name="estado" formControlName="estado" id="estado"
+            aria-describedby="estadoHelp">
+
+
+          <app-campo-control-erro [mostrarErro]="verificaValidTouched('endereco.estado')" msgErro="estado invalido.">
+
+          </app-campo-control-erro>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+
+    <button type="submit" class="btn btn-primary" (click)="onSubmit()"> Submit</button>
+    <button type="submit" class="btn" (click)="resetar()"> Cancelar</button>
+
+
+  </form>
+
+
+  
+
+</mat-card>
+

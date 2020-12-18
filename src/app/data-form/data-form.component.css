@@ -1,0 +1,14 @@
+.ng-invalid.ng-touched:not(form){
+    border: 1px solid red;
+}
+.alerta{
+    display: grid;
+    grid-template-columns: auto;
+    
+    align-self: flex-start;
+    
+   
+}
+.center{
+    padding: 10px;
+}

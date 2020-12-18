@@ -1,0 +1,33 @@
+
+<mat-card>
+  <mat-card-title>Lista de Usuarios</mat-card-title>
+<mat-accordion>
+  <mat-panel-description>
+    Mais Informações? {{panelOpenState ? ' clique denovo para fechar ;(' : 'clique para abrir :D'}}
+  </mat-panel-description>
+<div *ngIf="modelLista.length !== 0" >
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" *ngFor="let model of modelLista[0]">
+    <mat-expansion-panel-header >
+      <mat-panel-title>
+        {{model.nome}}
+      </mat-panel-title>
+      
+    </mat-expansion-panel-header>
+    
+    <p> <strong>e-mail:</strong>  {{model.email}}</p>
+    <p><strong>CEP:</strong> {{model.endereco.cep}}</p>
+    <p><strong>Rua:</strong>  {{model.endereco.rua}}</p>
+    <p><STRong>Complemento:</STRong> {{model.endereco.complemento}}</p>
+    <p><strong>Estado: </strong>{{model.endereco.estado}}</p>
+    <p><strong>nº residencia:</strong> {{model.endereco.numero}}</p>
+    <p><strong>Cidade: </strong>{{model.endereco.cidade}}</p>
+
+   
+  </mat-expansion-panel>
+
+  
+</div>
+</mat-accordion>
+
+
+</mat-card>
