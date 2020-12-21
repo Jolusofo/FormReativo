@@ -51,4 +51,11 @@ get(id):Observable<Usuario>{
     
 }
 
+deleter(id) {
+  return this.http.delete<Usuario>(this.baseUrl + '/usuario/' +
+      id, this.httpOptions) 
+      
+  
+}
+
 }

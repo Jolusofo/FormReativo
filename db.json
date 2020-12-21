@@ -1,62 +1,6 @@
 {
   "usuario": [
     {
-      "id": 1,
-      "nome": "Hambürguer",
-      "email": "joaozinho@banco.com",
-      "endereco": {
-        "cep": "11440-000",
-        "rua": "rua do acucar",
-        "complemento": "ap 2",
-        "estado": "SP",
-        "numero": "22",
-        "bairro": "cafe",
-        "cidade": "leite"
-      }
-    },
-    {
-      "id": 2,
-      "nome": "X-Bürguer",
-      "email": "joaozinho@banco.com",
-      "endereco": {
-        "cep": "11440-000",
-        "rua": "rua do acucar",
-        "complemento": "ap 2",
-        "estado": "SP",
-        "numero": "22",
-        "bairro": "cafe",
-        "cidade": "leite"
-      }
-    },
-    {
-      "id": 3,
-      "nome": "X-Bacon = salada",
-      "email": "joaozinho@banco.com",
-      "endereco": {
-        "cep": "11440-000",
-        "rua": "rua do acucar",
-        "complemento": "ap 2",
-        "estado": "SP",
-        "numero": "22",
-        "bairro": "cafe",
-        "cidade": "leite"
-      }
-    },
-    {
-      "id": 4,
-      "nome": "X-Tudo + Doguinho",
-      "email": "joaozinho@banco.com",
-      "endereco": {
-        "cep": "11440-000",
-        "rua": "rua do acucar",
-        "complemento": "ap 2",
-        "estado": "SP",
-        "numero": "22",
-        "bairro": "cafe",
-        "cidade": "leite"
-      }
-    },
-    {
       "id": 5,
       "nome": "Coca cola 350ml",
       "email": "joaozinho@banco.com",
@@ -99,34 +43,6 @@
       "id": 12
     },
     {
-      "nome": "dasddasd",
-      "email": "dasdasda@dasdas",
-      "endereco": {
-        "cep": "11430-040",
-        "rua": "Rua Martinho Araújo",
-        "complemento": "casa",
-        "estado": "SP",
-        "numero": "333",
-        "bairro": "Vila Ligya",
-        "cidade": "Guarujá"
-      },
-      "id": 13
-    },
-    {
-      "nome": "João lucas souza carne seca",
-      "email": "j.lucassousa76@gmail.com",
-      "endereco": {
-        "cep": "06618-000",
-        "rua": "Avenida Antônio Bardella",
-        "complemento": "casa",
-        "estado": "SP",
-        "numero": "2",
-        "bairro": "Jardim São Luiz",
-        "cidade": "Jandira"
-      },
-      "id": 14
-    },
-    {
       "nome": "Barbara Arão",
       "email": "barbara@everis.com",
       "endereco": {
@@ -141,32 +57,18 @@
       "id": 15
     },
     {
-      "nome": "João Lucas Souza",
+      "nome": "João Lucas Souza da Fonseca paçoca",
       "email": "j.lucassousa76@gmail.com",
       "endereco": {
-        "cep": "11065-300",
-        "rua": "Rua Pedro Borges Gonçalves",
-        "complemento": "2",
+        "cep": "11430-040",
+        "rua": "Rua Martinho Araújo",
+        "complemento": "casa",
         "estado": "SP",
-        "numero": "1",
-        "bairro": "José Menino",
-        "cidade": "Santos"
+        "numero": "333",
+        "bairro": "Vila Ligya",
+        "cidade": "Guarujá"
       },
       "id": 16
-    },
-    {
-      "nome": "João Lucas Souza da Fonseca",
-      "email": "j.lucassousa76@gmail.com",
-      "endereco": {
-        "cep": "06618-000",
-        "rua": "Avenida Antônio Bardella",
-        "complemento": "",
-        "estado": "SP",
-        "numero": "2",
-        "bairro": "Jardim São Luiz",
-        "cidade": "Jandira"
-      },
-      "id": 17
     }
   ]
 }

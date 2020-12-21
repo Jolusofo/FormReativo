@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {DataListComponent} from '../data-list.component'
 import { ReactiveFormsModule } from '@angular/forms';
-import {SharedModule} from '../../shared/shared.module';
+
 import {HttpClientModule } from '@angular/common/http';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
@@ -23,7 +23,7 @@ import { DatalistRoutingModule } from './datalist-routing.module';
 
     
     ReactiveFormsModule,
-    SharedModule,
+    
     HttpClientModule,
     MatFormFieldModule,
     MatCardModule,

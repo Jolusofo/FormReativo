@@ -1,12 +1,12 @@
 
 <mat-card>
-  <mat-card-title>Lista de Usuarios</mat-card-title>
+  <mat-card-title style="font-size: 30px;">Lista de Usuarios</mat-card-title>
 <mat-accordion>
-  <mat-panel-description>
-    Mais Informações? {{panelOpenState ? ' clique denovo para fechar ;(' : 'clique para abrir :D'}}
+  <mat-panel-description >
+    <h2>Mais Informações? {{panelOpenState ? ' clique denovo para fechar 😭' : 'clique para abrir 😁'}}</h2>
   </mat-panel-description>
 <div *ngIf="modelLista.length !== 0" >
-  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" *ngFor="let model of modelLista[0]">
+  <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" *ngFor="let model of modelLista">
     <mat-expansion-panel-header >
       <mat-panel-title>
         {{model.nome}}
@@ -27,7 +27,7 @@
       <mat-icon class="edit"> border_color</mat-icon>
     </button>
 
-    <button class="edit"  mat-icon-button color="primary" >
+    <button class="edit"  mat-icon-button color="primary" (click)="deletar(model.id)" >
       <mat-icon>restore_from_trash</mat-icon>
     </button>
 
