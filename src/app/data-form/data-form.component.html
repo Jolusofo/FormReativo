@@ -1,28 +1,50 @@
 <mat-card>
-
+  
   <mat-card-title>Novo Usuario</mat-card-title>
   <form class="form-horizontal" [formGroup]='formulario'>
+    
+    <!---->
+    <div class="form-group form-row center">
 
-    <div class="form-group" [ngClass]="aplicaCssErro('nome')">
-
-      <div class="col-sm-12">
-        <label for="nome">Nome completo</label>
+      <div class="col-sm-6" [ngClass]="aplicaCssErro('nome')">
+  
+        
+  
+        <div >
+          <label for="nome">Nome completo</label>
+          <input type="text" matInput class="form-control" formControlName="nome" id="nome" aria-describedby="namelHelp">
+          
+          <app-campo-control-erro [mostrarErro]="verificaValidTouched('nome')" msgErro="nome invalido.">
+            
+          </app-campo-control-erro>
+          
+        </div>
       </div>
+      
 
 
-      <div class="col-sm-12">
 
-
-        <input type="text" matInput class="form-control" formControlName="nome" id="nome" aria-describedby="namelHelp">
-
+      <div class="col-sm-6" [ngClass]="aplicaCssErro('cpf')">
+  
+        
+        
+        <div >
+          <label for="nome">CPF </label>
+  
+  
+          <input type="text" matInput class="form-control" formControlName="cpf" id="CPF" aria-describedby="cpflHelp" onkeypress="mascara(this, cep)">
+  
+        </div>
+        <app-campo-control-erro [mostrarErro]="verificaValidTouched('cpf')" msgErro="cpf invalido.">
+  
+        </app-campo-control-erro>
+  
       </div>
-      <app-campo-control-erro [mostrarErro]="verificaValidTouched('nome')" msgErro="nome invalido.">
-
-      </app-campo-control-erro>
 
     </div>
+    
 
-
+<!---->
 
     <div class="form-group" [ngClass]="aplicaCssErro('email')">
       <div class="col-sm-12">
@@ -145,7 +167,7 @@
 
 
 
-    <button type="submit" class="btn btn-primary" (click)="onSubmit()"> Submit</button>
+    <button type="submit" class="btn btn-primary" (click)="onSubmit()"> Enviar</button>
     <button type="submit" class="btn" (click)="resetar()"> Cancelar</button>
 
 

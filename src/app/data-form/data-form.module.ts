@@ -21,7 +21,8 @@ import {DataFormService} from './data-form.service';
     HttpClientModule,
     MatFormFieldModule,
     MatCardModule,
-    MatInputModule
+    MatInputModule,
+    
     
   ],
   providers: [DataFormService],
